@@ -1,0 +1,148 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{AFE7A73E-3B34-4B7F-A96D-F1AB3126E3AB}</ProjectGuid>
+			<MainSource>Backupper.dpr</MainSource>
+			<Basis>True</Basis>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<Platform>Win32</Platform>
+			<AppType>Application</AppType>
+			<FrameworkType>VCL</FrameworkType>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Basis' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_IOChecking>false</DCC_IOChecking>
+			<DCC_UsePackage>rtl;vcl;dbrtl;vcldb;vclx;adortl;dbxcds;dbexpress;vclib;ibxpress;IntrawebDB_72_90;Intraweb_72_90;xmlrtl;vclie;inet;inetdbbde;inetdbxpress;IndySystem;IndyCore;dclOfficeXP;VclSmp;soaprtl;dsnap;IndyProtocols;inetdb;bdertl;vcldbx;webdsnap;websnap;vclactnband;vclshlctrls;teeui;teedb;tee;dsnapcon;Package1;CoolTrayIcon_D6plus;lmdel50_d9;JamShellD2005Win32;ShutDownPack;Jcl;JvStdCtrlsD9R;JvAppFrmD9R;JvBandsD9R;JvDlgsD9R;JvDockingD9R;JvEDID9R;JvGlobusD9R;JvManagedThreadsD9R;JvSystemD9R;JvWizardD9R;JvXPCtrlsD9R;madDisAsm_;madExcept_;madBasic_</DCC_UsePackage>
+			<DCC_DebugInformation>false</DCC_DebugInformation>
+			<DCC_ImageBase>00400000</DCC_ImageBase>
+			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;$(DCC_UnitAlias)</DCC_UnitAlias>
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_UnitSearchPath>C:\Users\Chef\Documents\Borland Studio-Projekte\ressourcekit\Komponenten\Jedi\jcl\lib\d10\debug;C:\Dokumente und Einstellungen\Chef\Eigene Dateien\Borland Studio-Projekte\ressourcekit\Komponenten\Jedi\JCL\lib\d10\debug;C:\Dokumente und Einstellungen\Chef\Eigene Dateien\Borland Studio-Projekte\ressourcekit\Komponenten\Jedi\JVCL\lib\d10\debug;C:\Dokumente und Einstellungen\Chef\Eigene Dateien\Borland Studio-Projekte\ressourcekit\Komponenten\Jedi\jcl\lib\d10\debug;C:\Dokumente und Einstellungen\Chef\Eigene Dateien\Borland Studio-Projekte\ressourcekit\Komponenten\Jedi\jvcl\lib\d10\debug;$(BDS)\lib\Debug;$(BDS)\Lib\Debug\Indy10;..\..\common;D:\Programme\Borland\JVCL\jcl\source;D:\Programme\Borland\JVCL\jvcl\run;D:\Programme\Borland\JVCL\jvcl\dcu;C:\Dokumente und Einstellungen\Chef\Eigene Dateien\Borland Studio-Projekte\ressourcekit\DEC_5_1\Part_I;D:\Programme\Borland\JVCL\jvcl;C:\Dokumente und Einstellungen\Chef\Eigene Dateien\Borland Studio-Projekte\ressourcekit\Komponenten\TShutDownKomponente;D:\Programme\Borland\JVCL\jcl;D:\Programme\Borland\BDS\3.0\lib\jcl\source;D:\Programme\Borland\BDS\3.0\lib\jcl;D:\Programme\Borland\BDS\3.0\lib\jvcl\run;D:\Programme\Borland\BDS\3.0\lib\jvcl\dcu;D:\Programme\Borland\BDS\3.0\lib\jvcl;D:\Programme\Borland\BDS\3.0\lib\jvcl\Resources;C:\Dokumente und Einstellungen\Chef\Eigene Dateien\Borland Studio-Projekte\ressourcekit\Komponenten\TScrollingCredits;C:\Dokumente und Einstellungen\Chef\Eigene Dateien\Borland Studio-Projekte\ressourcekit\pas;D:\Programme\Borland\BDS\3.0\lib\jcl\lib\d9;C:$(HOMEPATH)\Eigene Dateien\Borland Studio-Projekte\ressourcekit\Komponenten\FastMM4;D:\Programme\Soft Gems\Virtual Treeview\Source;C:\Dokumente und Einstellungen\Chef\Eigene Dateien\Borland Studio-Projekte\ressourcekit\Komponenten\CoolTrayIcon;C:\Dokumente und Einstellungen\Chef\Eigene Dateien\Borland Studio-Projekte\ressourcekit\Komponenten\CoolTrayIcon\D10;C:\Dokumente und Einstellungen\Chef\Eigene Dateien\Borland Studio-Projekte\ressourcekit\Komponenten\TShutDownKomponente\D10;C:\Dokumente und Einstellungen\Chef\Eigene Dateien\Borland Studio-Projekte\ressourcekit\Komponenten\Jedi\jvcl\common;C:\Dokumente und Einstellungen\Chef\Eigene Dateien\Borland Studio-Projekte\ressourcekit\Komponenten\Jedi\jcl\source\windows;C:\Dokumente und Einstellungen\Chef\Eigene Dateien\Borland Studio-Projekte\ressourcekit\Komponenten\Jedi\jcl\source\common;C:\Dokumente und Einstellungen\Chef\Eigene Dateien\Borland Studio-Projekte\ressourcekit\Komponenten\Jedi\jcl\lib\d10;C:\Dokumente und Einstellungen\Chef\Eigene Dateien\Borland Studio-Projekte\ressourcekit\Komponenten\SynEdit-2_0_6\Source;C:\Dokumente und Einstellungen\Chef\Eigene Dateien\Borland Studio-Projekte\ressourcekit\Komponenten\Jedi\jvcl\run;C:\Dokumente und Einstellungen\Chef\Eigene Dateien\Borland Studio-Projekte\ressourcekit\Komponenten\RtlVclOptimize;C:\Dokumente und Einstellungen\Chef\Eigene Dateien\Borland Studio-Projekte\ressourcekit\Komponenten\RtlVclOptimize\FastCode;C:\Dokumente und Einstellungen\Chef\Eigene Dateien\Borland C:\Dokumente und Einstellungen\Chef\Eigene Dateien\Borland Studio-Projekte\ressourcekit\Komponenten\RtlVclOptimize\FastObj;C:\Dokumente und Einstellungen\Chef\Eigene Dateien\Borland Studio-Projekte\ressourcekit\Komponenten\TNTUniCtrlsWithExceptions\Source;C:\Dokumente und Einstellungen\Chef\Eigene Dateien\Borland Studio-Projekte\ressourcekit\Komponenten\RtlVclOptimize\FastObj;C:\Dokumente und Einstellungen\Chef\Eigene Dateien\Borland Studio-Projekte\ressourcekit\Komponenten\TUbuntuProgress 1.1;C:\Dokumente und Einstellungen\Chef\Eigene Dateien\Borland Studio-Projekte\ressourcekit\Komponenten\csProgressBarEx;C:\Users\Chef\Documents\Borland Studio-Projekte\ressourcekit\Komponenten\Jedi\jcl\source;C:\Users\Chef\Documents\Borland Studio-Projekte\ressourcekit\Komponenten\Jedi\jvcl\resources;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+			<DCC_K>false</DCC_K>
+			<DCC_N>true</DCC_N>
+			<DCC_S>false</DCC_S>
+			<DCC_F>false</DCC_F>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_AssertionsAtRuntime>false</DCC_AssertionsAtRuntime>
+			<DCC_E>false</DCC_E>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+			<DCC_Optimize>false</DCC_Optimize>
+			<DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="Backupper.dpr">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="MainFrame.pas">
+				<Form>MainForm</Form>
+			</DCCReference>
+			<DCCReference Include="EditChange.pas">
+				<Form>TEditChange</Form>
+			</DCCReference>
+			<DCCReference Include="tSearchFiles.pas"/>
+			<DCCReference Include="tSortFiles.pas"/>
+			<DCCReference Include="tFileOperation.pas"/>
+			<DCCReference Include="About.pas">
+				<Form>AboutBox</Form>
+			</DCCReference>
+			<DCCReference Include="SettingsDialog.pas">
+				<Form>SettingsForm</Form>
+			</DCCReference>
+			<DCCReference Include="ShowErrors.pas">
+				<Form>ShowErrors</Form>
+			</DCCReference>
+			<DCCReference Include="VTreeHelper.pas"/>
+			<DCCReference Include="ShutdownRestart.pas">
+				<Form>ShutdownRestartDialog</Form>
+			</DCCReference>
+			<DCCReference Include="tUpdate.pas"/>
+			<DCCReference Include="ProgressDialog.pas">
+				<Form>ProgressForm</Form>
+			</DCCReference>
+			<DCCReference Include="tDirWatch.pas"/>
+			<DCCReference Include="VPropertyTreeEditors.pas"/>
+			<DCCReference Include="FileCopier.pas"/>
+			<DCCReference Include="SRDialog.pas">
+				<Form>SRForm</Form>
+			</DCCReference>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Basis">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+		<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\8.0\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\8.0\UserTools.proj"/>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Source>
+						<Source Name="MainSource">Backupper.dpr</Source>
+					</Source>
+					<Parameters>
+						<Parameters Name="RunParams">-forum</Parameters>
+						<Parameters Name="LoadAllSymbols">False</Parameters>
+					</Parameters>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">True</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">31</VersionInfo>
+						<VersionInfo Name="Release">19</VersionInfo>
+						<VersionInfo Name="Build">1701</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1031</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName"/>
+						<VersionInfoKeys Name="FileDescription">Backuptool for automated backup based on folders</VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion">1.31.19.1701</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName">Backupper</VersionInfoKeys>
+						<VersionInfoKeys Name="LegalCopyright">C.Schoch</VersionInfoKeys>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename">Backupper.exe</VersionInfoKeys>
+						<VersionInfoKeys Name="ProductName">Backupper</VersionInfoKeys>
+						<VersionInfoKeys Name="ProductVersion">0.3.5.860</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+					<Excluded_Packages>
+						<Excluded_Packages Name="D:\Programme\ComponentAce\AbsoluteDatabase\Lib\Delphi 2006 and C++ Builder 2006\dclAbsDbd10.bpl">Absolute Database - Design package</Excluded_Packages>
+					</Excluded_Packages>
+				</Delphi.Personality>
+				<Platforms>
+					<Platform value="Win32">True</Platform>
+				</Platforms>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>

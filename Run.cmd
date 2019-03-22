@@ -1,0 +1,1 @@
+"C:\Dokumente und Einstellungen\Chef\Eigene Dateien\Borland Studio-Projekte\Backupper\Backupper.exe" -forum -auto -shutdown

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Backupper>
+ <MainForm>
+   <tvSourceDestination Hint="Doublecklick to Add a job"/>
+   <btBackup Caption="Go"/>
+   <btCancel Caption="Cancel"/>
+   <btSuspend Caption="Suspend"/>
+   <btTest Caption="Test"/>
+   
+   <pmListView/>
+     <pmAdd Caption="Add"/>
+     <pmCopy Caption="Copy"/>
+     <pmChange Caption="Change"/>
+     <pmDel Caption="Delete"/>
+     <pmShowErrors Caption="Show Errorlist"/>
+   
+   <pmTrayIcon/>
+     <pmtShow Caption="Show"/>
+     <pmtHide Caption="Hide"/>
+     <pmtCancel Caption="Cancel"/>
+     <pmtEnableTimer Caption="Timer enabled"/>
+     <pmtClose Caption="Close"/>
+   
+   <mmFile Caption="&amp;File"/>
+     <mmBackup Caption="Go"/>
+     <mmCancel Caption="Cancel"/>
+     <mmEnd Caption="Close"/>
+     <mmKill Caption="Kill"/>
+   
+   
+   <mmSearch Caption="&amp;Search"/>
+     <meSearchReplace Caption="Search and Replace"/> 
+
+   <mmOptions Caption="&amp;Options"/>
+     
+     <mmSettings Caption="Settings"/>
+       
+     <mmLanguage Caption="Language"/>
+       <mmLangGerman Caption="Deutsch"/>
+       <mmLangEnglish Caption="English"/>
+       <mmLangSpecial Caption="Schwäbisch :)"/>
+     
+     <mmUpdates Caption="Updates"/>
+       <mmUpdateNow Caption="Update now"/>
+       <mmCheckUpdateNow Caption="Check now"/>
+       <mmCheckUpdateAuto Caption="Check automatic"/>
+       <mmLoadUpdateAuto Caption="Update automatic"/>
+
+     <mmShowExtendedProgress Caption="Extended progress"/>    
+
+   <mmSpecial Caption="&amp;Special"/>
+	 <mmUninstall Caption="Uninstall"/>
+	 <mmRestore Caption="Restore files"/>
+
+   <mmJobs Caption="&amp;Jobs"/>
+     <mmAdd Caption="Add"/>
+     <mmCopy Caption="Copy"/>
+     <mmChange Caption="Change"/>
+     <mmDel Caption="Delete"/>
+     <mmShowErrors Caption="Show Errorlist"/>
+   
+   <mmAbout Caption="A&amp;bout"/>
+   
+   <GUIStrings>
+     <tvName>Name</tvName>
+     <tvSource>Source</tvSource>
+     <tvDest>Destination</tvDest>
+     <tvLastRun>Last run</tvLastRun>
+     <eclvFileMask>Extension</eclvFileMask>
+     <eclvSubFolders>Sub Folders</eclvSubFolders>     
+     <StandW>Standart values loaded.%sdo you want to change?</StandW>
+     <Loaded>Backupper started.</Loaded>
+     <AddJob>Add Job</AddJob>
+     <RealyDeleteJob>Do you realy want to delete Job "%s"?</RealyDeleteJob>
+     <ChangeJob>Change Job</ChangeJob>
+     <NoJob>No Job available!%sdo you want to add one?</NoJob>
+     <Canceled>Backup canceled.</Canceled>
+     <CanceledTimed>Job "%s" started by timer canceled.</CanceledTimed>
+     <CanceledBack>Restore job "%s" canceled.</CanceledBack>
+     <Canceling>Backup is beeing canceled...</Canceling>
+     <EndBackup>Should the Backup get finished bevore shutdown?</EndBackup>
+     <ShutdownBlock>Runs jobs / shutdownjobs.</ShutdownBlock>
+     <Closing>Backupper is beeing closed...</Closing>
+     <Closed>Backupper closed.</Closed>
+     <RealyCancel>Do you realy want to cancel?</RealyCancel>
+     <tpTimeCritical>Realtime (not recommended)</tpTimeCritical>
+     <tpHighest>High</tpHighest>
+     <tpHigher>higher then Normal</tpHigher>
+     <tpNormal>Normal (recommended)</tpNormal>
+     <tpLower>lower then Normal</tpLower>
+     <tpLowest>low</tpLowest>
+     <tpIdle>Idle</tpIdle>
+     <llError>Errors (0)</llError>
+     <llWarning>Warnings (1)</llWarning>
+     <llInformation>informations (2)</llInformation>
+     <llDebug>Debug (3)</llDebug>
+     <Credits1>&amp;b&amp;uBackupper </Credits1>
+     <Credits3>Creatings to:</Credits3>
+     <Credits4>and all others who helped me.</Credits4>
+     <CheckingUpdate>check for updates</CheckingUpdate>
+     <NewVersionAvailable>A new version is available</NewVersionAvailable>
+     <NewVersionAvailableLoad>A new version is available.%sDo you want to download it now</NewVersionAvailableLoad>
+     <NoNewVersionAvailable>No new version available</NoNewVersionAvailable>     
+     <Version>Newest version: %s</Version>
+     <Unknown>unknown</Unknown>
+     <Suspend>Suspend</Suspend>
+     <Continue>Continue</Continue>
+     <ModeFile>Fast (filesize, filedate)</ModeFile>
+     <ModeHash>Save (hash)</ModeHash>
+     <ModeOneShot>One time</ModeOneShot>
+     <ModeEachMinute>minutes</ModeEachMinute>
+     <ModeEachHour>hours</ModeEachHour>
+     <ModeEachDay>days</ModeEachDay>
+     <ModeEachMonth>months</ModeEachMonth>     
+     <ModeNone>disabled</ModeNone>
+     <ModeChange>run on change</ModeChange>
+     <ModeChangeAndTimer>run on timer and detected change</ModeChangeAndTimer>
+     <ModeChangeOrTimer>run on timer or on detected change</ModeChangeOrTimer>
+     <UnknownSettings>Unknown Settingsfile!%sPlease run update and restart the application</UnknownSettings>
+     <Timeout>Shudown in %d seconds</Timeout>
+     <Uninstall>Do you realy want to uninstall Backupper?</Uninstall>
+     <UninstallSucces>Uninstallation suceed.%Please delete Programmfolder manualy.</UninstallSucces>
+     <Restore>Do you realy want to restore the files?%sThis will override newer source files!</Restore>
+     <Never>never</Never> 
+     <Init>Initialising</Init>
+     <Finished>Executed</Finished>
+     <lFilesCount1>Found in source/destination</lFilesCount1>
+     <lFilesCount2>File no. %d of %d</lFilesCount2>     
+     <lTimeDone1>Source: %d</lTimeDone1>
+     <lTimeDone2>Time: %s</lTimeDone2>
+     <lTimeLeft1>Destination: %d</lTimeLeft1>
+     <lTimeLeft2>Time left: %s</lTimeLeft2>
+     <lActionFileName1>Searching %s / %s</lActionFileName1>
+     <lActionFileName2>Hashing %s / %s</lActionFileName2>
+     <lActionFileName3>Searching new files %s / %s</lActionFileName3>
+     <lActionFileName4>Searching deleted files %s / %s</lActionFileName4>
+     <lActionFileName5>Searching deleted folders</lActionFileName5>
+     <lActionFileName6>Searching moved files %s / %s</lActionFileName6>
+     <lActionFileName7>Copiing %s / %s</lActionFileName7>
+     <lActionFileName8>Moving %s / %s</lActionFileName8>
+     <lActionFileName9>Deleting %s</lActionFileName9>
+     <lActionFileName10>Deleting folders</lActionFileName10> 
+	 <lActionFileName11>Starting application %s</lActionFileName11>     
+     <lActionFileName12>Closing application %s</lActionFileName12>  
+     <lSizeDoneTotal1>Total size Source: %s Destination: %s</lSizeDoneTotal1>
+     <lSizeDoneTotal2>%s of %s</lSizeDoneTotal2>
+     <lFrom1>Source: %s</lFrom1>
+     <lFrom3>From: %s</lFrom3>
+     <lTo1>Destination: %s</lTo1>
+     <lTo3>To: %s</lTo3> 
+     <None>None</None>
+     <RunBevore>Run bevore</RunBevore>
+     <RunAfter>Run after</RunAfter>
+     <CloseBevore>Close bevore</CloseBevore>
+     <CloseAfter>Close after</CloseAfter>
+     <RunBevoreAndWait>Run bevore and wait</RunBevoreAndWait>
+     <RunAfterAndWait>Run after and wait</RunAfterAndWait>
+     <CloseBevoreAndWait>Close bevore and wait</CloseBevoreAndWait>
+     <CloseAfterAndWait>Close after and wait</CloseAfterAndWait> 
+     <vstPath>Path</vstPath>
+     <vstParam>Parameter</vstParam>
+     <vstAction>Action</vstAction>
+     <vstTimeout>Timeout (s)</vstTimeout>
+     <ClickToChange>Click to change</ClickToChange>
+     <SRMComlete>In complete path</SRMComlete>
+     <SRMDrivePart>In drive part</SRMDrivePart>
+     <SRMFolderPart>In folder part</SRMFolderPart>
+     <SRMDrive>Drive part</SRMDrive>
+     <SRMFolder>Folder part</SRMFolder>
+     <RealyReplace>Do you want to replace "%s" with "%s" ?</RealyReplace>
+   </GUIStrings>
+     
+   <LogStrings>
+     <!--The number in front of each the text describes the log level of the entry-->
+     <!--Each entry which is at the same level or lower as the selected level in the programm is written to the logfile-->
+     <!--Available levels:-->
+     <!--0: Error-->
+     <!--1: Warning-->
+     <!--2: Information-->
+     <!--3: Debug-->
+     <!--4: No Level (Never written)-->
+     <JobAdded>2Job "%s" added.</JobAdded>     
+     <JobDeleted>2Job "%s" deleted.</JobDeleted>     
+     <JobChanged>2Job "%s" changed.</JobChanged>
+     <JobCopied>2Job "%s" copied.</JobCopied>     
+     <Started>2Backup started.</Started>
+     <JobStarted>2Job "%s" started</JobStarted>
+     <JobStartedTimed>2Job "%s" started by timer</JobStartedTimed>
+     <JobStartedBack>2Job "%s" started by restore</JobStartedBack>
+     <Error>0Backup finished with errors.</Error>
+     <ErrorJob>0Job "%s" finished with errors.</ErrorJob>
+     <ErrorTimed>0Job "%s" started by Timer finished with errors.</ErrorTimed>
+     <ErrorBack>0Restore job "%s" finished with errors.</ErrorBack>
+     <Success>2Backup succeed.</Success>
+     <SuccessJob>2Job "%s" succeed.</SuccessJob>
+     <SuccessTimed>2Job "%s" started by Timer succeed.</SuccessTimed>
+     <SuccessBack>2Restore job "%s"  succeed.</SuccessBack>
+     <Canceled>1Backup canceled.</Canceled>
+     <CanceledJob>1Job "%s" canceled.</CanceledJob>
+     <CanceledTimed>1Job "%s" started by timer canceled.</CanceledTimed>
+     <CanceledBack>1Restore job "%s" canceled.</CanceledBack>
+     <ShutdownCanceled>2Backupper canceled the shutdown process because of shutdown jobs!</ShutdownCanceled>     
+     <Closing>2Backupper is beeing closed...</Closing>
+     <Closed>2Backupper closed.</Closed>     
+     <SettingsChanged>2Settings changed.</SettingsChanged>
+     <Copy>2Copiing</Copy>
+     <Copying>2Copiing file "%s" to "%s"</Copying>
+     <ErrorCreatingDir>0The folder "%s" couldn´t be created : %s</ErrorCreatingDir>
+     <ErrorCopying>0The file "%s" couldn`t be copied to "%s" : %s</ErrorCopying>
+     <ErrorCopyingListEmpty>0Nothing to copy : List empty</ErrorCopyingListEmpty>
+     <CopyEnd>2Copiing ended.</CopyEnd>
+     <Move>2Moving</Move>
+     <Moving>2Moving file "%s" to "%s"</Moving>
+     <ErrorMoving>0The file "%s" couldn`t be moved to "%s" : %s</ErrorMoving>
+     <ErrorMovingListEmpty>0Nothing to move : List empty</ErrorMovingListEmpty>
+     <MoveEnd>2Moving ended</MoveEnd>
+     <Delete>2Deleteting files</Delete>
+     <Delting>2Deleting file "%s"</Delting>     
+     <ErrorDelting>0The file "%s" couldn`t be deleted : %s</ErrorDelting>
+     <ErrorDeletingListEmpty>0Nothing to delete : List empty</ErrorDeletingListEmpty>
+     <DeleteEnd>2Deleting files ended</DeleteEnd>
+     <DeltingDirsFound>3The folder "%s" should be deleted</DeltingDirsFound>
+     <DeleteDirs>2Deleteing folders</DeleteDirs>     
+     <DeltingDirs>2Deleting folder "%s"</DeltingDirs>
+     <ErrorDeltingDirs>0The folder "%s" couldn`t be deleted : %s</ErrorDeltingDirs>
+     <ErrorDeletingDirsListEmpty>0Nothing to delete : List empty</ErrorDeletingDirsListEmpty>
+     <DeleteDirsEnd>2Deleting folders ended</DeleteDirsEnd>
+     <Hashing>2Hashing</Hashing>
+     <HashingFile>2Hashing file "%s"</HashingFile>
+     <HashingError>0The file "%s" couldn`t be hashed : %s</HashingError>
+     <HashingEnd>2Hashing ended</HashingEnd>
+     <SearchFiles>2Search for files</SearchFiles>
+     <SearchFilesFound>3Found file "%s"</SearchFilesFound>
+     <SearchFilesError>0The search in folder "%s" not possible  : %s</SearchFilesError>
+     <SearchFilesEnd>2Search for files ended</SearchFilesEnd>
+     <SortFiles>2Sorting files</SortFiles>
+     <SearchNewFiles>2search for new and changed files</SearchNewFiles>
+     <SearchNewFilesFound>3The file "%s" should be copied to "%s"</SearchNewFilesFound>
+     <SearchChangedFilesFound>3The file "%s" should be updated to "%s"</SearchChangedFilesFound>
+     <SearchNewFilesEnd>2search for new and changed files ended</SearchNewFilesEnd>
+     <SearchDeletedFiles>2search for deleted files</SearchDeletedFiles>
+     <SearchDeletedFilesFound>3The file "%s" should be deleted</SearchDeletedFilesFound>
+     <SearchDeletedFilesEnd>2search for deleted files ended</SearchDeletedFilesEnd>
+     <SearchDeletedDirs>2search for deleted files</SearchDeletedDirs>
+     <SearchDeletedDirsEnd>2search for deleted files ended</SearchDeletedDirsEnd>
+     <SearchMovedFiles>2search for moved files</SearchMovedFiles>
+     <SearchMovedFilesFound>3The file "%s" should be moved to "%s"</SearchMovedFilesFound>
+     <SearchMovedFilesEnd>2search for moved files ended</SearchMovedFilesEnd>
+     <SortFilesEnd>2sorting files ended</SortFilesEnd>
+     <ErrorSetAffinity>1Error while setting Processor Affinity for Thread "%s" : %s</ErrorSetAffinity>     
+     <CheckingUpdateEnd>2Check for updates done</CheckingUpdateEnd>
+     <ErrorCheckingUpdate>0Error while checking for updates</ErrorCheckingUpdate>
+     <NewVersionAvailable>2A new version is available</NewVersionAvailable>
+     <Updating>2loading update</Updating>
+     <UpdatingEnd>2update loaded sucessfully</UpdatingEnd>
+     <ErrorUpdating>0Error while loading update</ErrorUpdating>
+     <NoSourceFolder>0Access to source folder not possible Job "%s" canceled</NoSourceFolder>
+     <Loaded>2Backupper started.</Loaded>
+     <DestLwNameWrong>0Name of destination drive wrong Job "%s" canceled</DestLwNameWrong>
+     <SourceLwNameWrong>0Name of source drive wrong Job "%s" canceled</SourceLwNameWrong>
+   </LogStrings>
+ </MainForm>
+
+ <AboutBox Caption="About">
+   <OKButton Caption="OK"/>
+ </AboutBox>
+
+ <TEditChange Caption="Add / Change">
+   
+   <tsBasicOptions Caption="Options"/> 
+     <gbBasicOptions Caption=" Options "/>
+       <cbEnabled Caption="Process Job (On)"/>
+       <lName Caption="Name (First word is group name):"/>
+       <lSource Caption="Source folder (Network example.: \\server\share|folder\):"/>
+       <eSourcePath DialogText="Choose Source folder"/>
+       <lDestination Caption="Destination folder (Network example.: \\server\share|folder\):"/>
+       <eDestinationPath DialogText="Choose Destination folder"/>
+   
+   <tsAdvancedOptions Caption="Extended Options"/>
+     <gbAdvancedOptions Caption=" Extended Options "/>
+       <cbSubFolders Caption="Process Sub folders"/>
+       <cbDeleteFiles Caption="Delete no more existing files"/>
+       <lFileMask Caption="Fileextensions to process (*.jpg;*.rar):"/>
+       <eFileMask Hint="Seperated by '';'' ."/>
+       <lApplications Caption="Applications:"/>
+       <lCompareMode Caption="Compare mode:"/>
+       <lTimeDiff Caption="Allowed time difference between Files:"/>
+       <lSeconds Caption="seconds"/>
+
+   <tsTimerOptions Caption="Automation"/>   
+     <gbTimerOptions Caption=" Automation "/>
+       <lTimerNumber Caption="Number of job timer"/>
+       <cbTimerEnabled Caption="Timer enabled"/>
+       <cbOnShutdown Caption="On Shutdown"/>
+       <lTimerMode Caption="Repetitions:"/>
+       <lEach Caption="Each"/>
+       <lWatchMode Caption="Directory watch mode:"/>       
+       <lTimerDate Caption="Date of next execution:"/>
+       <lTimerTime Caption="Time of next execution:"/>
+
+   <tsSkip Caption="Skiping"/>
+     <gbSkipFolders Caption=" Skip folders "/>
+       <eSkipFolders DialogText="Choose path to skip"/>
+     <gbSkipFiles Caption=" Skip files (Skip, Skip.txt, .txt, C:\Skip.txt) "/>
+       <eSkipFiles Filter="All files (*.*)|*.*" DialogTitle="Choose file"/>  
+
+   <tsDrive Caption="Drives"/>
+     <gbDrive Caption=" Drives "/>
+       <cbSourceDriveLabel Caption="Check source drive name ->"/>
+       <cbDestDriveLabel Caption="Check destination drive name ->"/>
+       <cbEnableNetworkLogon Caption="Activate network loggon"/>
+       <lUsername Caption="Username:"/>
+       <lPassword Caption="Password:"/> 
+
+   <btOk Caption="OK"/>
+   <btCancel Caption="Cancel"/>
+ </TEditChange>
+
+ <SettingsForm Caption="Setttings">
+   <btOk Caption="OK"/>
+   <btCancel Caption="Cancel"/>
+   <btSetValues Caption="Apply"/>
+   
+   <gbLogging Caption=" Logging "/>
+     <lLogPath Caption="Path:"/>
+     <lLogLevel Caption="Level:"/>
+     <eLogPath Hint="Doubleklick to select."/>
+     <cbDescription Caption="write description for entrys"/>
+     <cbLogEnabled Caption="On"/>
+   
+   <gbProgramm Caption=" Programm "/>
+     <lPriority Caption="Priority:"/>
+     <lCloseTimeout Caption="Genreal timeout:"/>
+     <lSeconds Caption="seconds"/>
+     <cThreadPriority/> 
+     <seWaitTimeout/>
+     <cbEndBackupbevoreShutdown Caption="End backup bevore shutdown"/>
+     <cbConfirmDelete Caption="Ask when delete a job"/>
+     <cbConfirmShutdown Caption="Ask what to do at shutdown"/>
+     <cbAutostart Caption="Start with Windows"/>
+     <cbStartInTray Caption="Start as tray icon"/>
+     <cbMinimizeToTray Caption="Minimize to tray"/>
+     <cbExtProgress Caption="Show extended progress"/>
+   
+   <gbAfterBackup Caption=" After manual backup "/>
+     <cbShutdown Caption="Shutdown"/>
+     <cbForce Caption="force Shutdown"/>
+     <cbClose Caption="Close Programm"/>  
+ </SettingsForm>
+
+ <TShowErrors Caption="Job Errors">
+   <btClose Caption="&amp;Close"/>
+ </TShowErrors>
+
+ <ShutdownRestartDialog Caption="Shutdown?">
+   <lWhattoDo Caption="What did you want to do?"/>
+   <btShutdown Caption="Shudown"/>
+   <btRestart Caption="Restart"/>
+ </ShutdownRestartDialog>
+ 
+ <ProgressForm Caption="Backup - Progress">
+   <btBackup Caption="Go"/>
+   <btCancel Caption="Cancel"/>
+   <btSuspend Caption="Suspend"/>
+ </ProgressForm>
+
+ <SRForm Caption="Search and Replace">
+   <btOk Caption="OK"/>
+   <btCancel Caption="Cancel"/>
+   <lComp Caption="Search for:"/>
+   <lReplace Caption="Replace with:"/>
+   <cbCaseSens Caption="Case sensitive"/>
+   <cbQuitChanges Caption="Confirm changes"/>
+   <lMode Caption="Replace:"/>
+ </SRForm>
+</Backupper>

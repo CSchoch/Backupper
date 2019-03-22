@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Backupper>
+ <MainForm>
+   <tvSourceDestination Hint="Doppelklick zum hinzufügen eines Jobs"/>
+   <btBackup Caption="Start"/>
+   <btCancel Caption="Abbrechen"/>
+   <btSuspend Caption="Anhalten"/>
+   <btTest Caption="Test"/>
+   
+   <pmListView/>
+     <pmAdd Caption="Hinzufügen"/>
+     <pmCopy Caption="Kopieren"/>
+     <pmChange Caption="Ändern"/>
+     <pmDel Caption="Entfernen"/>
+     <pmShowErrors Caption="Zeige Fehlerliste"/>
+   
+   <pmTrayIcon/>
+     <pmtShow Caption="Anzeigen"/>
+     <pmtHide Caption="Verstecken"/>
+     <pmtCancel Caption="Abbrechen"/>
+     <pmtEnableTimer Caption="Timer aktiviert"/>
+     <pmtClose Caption="Schließen"/>     
+   
+   <mmFile Caption="&amp;Datei"/>
+     <mmBackup Caption="Start"/>
+     <mmCancel Caption="Abbrechen"/>
+     <mmEnd Caption="Ende"/>
+     <mmKill Caption="Kill"/>
+
+   <mmSearch Caption="&amp;Suchen"/>
+     <meSearchReplace Caption="Suchen und Ersetzen"/> 
+
+   <mmOptions Caption="&amp;Optionen"/>
+
+	 <mmSettings Caption="Einstellungen"/>
+
+		<mmLanguage Caption="Sprache"/>
+		 <mmLangGerman Caption="Deutsch"/>
+		 <mmLangEnglish Caption="English"/>
+		 <mmLangSpecial Caption="Schwäbisch :)"/>
+
+         <mmUpdates Caption="Updates"/>
+		 <mmUpdateNow Caption="Jetzt aktualisieren"/>
+		 <mmCheckUpdateNow Caption="Jetzt prüfen"/>
+		 <mmCheckUpdateAuto Caption="Automatisch prüfen"/>
+		 <mmLoadUpdateAuto Caption="Automatisch aktualisieren"/>
+
+         <mmShowExtendedProgress Caption="Erweiterte Fortschrittsanzeige"/>
+
+   <mmSpecial Caption="&amp;Extras"/>
+	 <mmUninstall Caption="Deinstallieren"/>
+	 <mmRestore Caption="Dateien wiederherstellen"/>
+
+   <mmJobs Caption="&amp;Jobs"/>
+     <mmAdd Caption="Hinzufügen"/>
+     <mmCopy Caption="Kopieren"/>
+     <mmChange Caption="Ändern"/>
+     <mmDel Caption="Entfernen"/>
+     <mmShowErrors Caption="Zeige Fehlerliste"/>
+   
+   <mmAbout Caption="Ü&amp;ber"/>
+
+   <GUIStrings>
+     <tvName>Name</tvName>
+     <tvSource>Quelle</tvSource>
+     <tvDest>Ziel</tvDest>
+     <tvLastRun>Zuletzt ausgeführt</tvLastRun>
+     <eclvFileMask>Dateiendung</eclvFileMask>
+     <eclvSubFolders>Unterordner</eclvSubFolders>
+     <StandW>Standardwerte geladen.%sWollen sie diese personalisieren?</StandW>
+     <Loaded>Backupper gestartet.</Loaded>
+     <AddJob>Job hinzufügen</AddJob>
+     <RealyDeleteJob>Wollen sie den Job "%s" wirklich löschen?</RealyDeleteJob>
+     <ChangeJob>Job ändern</ChangeJob>
+     <NoJob>Kein Job vorhanden!%sWollen sie einen Job hinzufügen?</NoJob>    
+     <Canceled>Backup abgebrochen.</Canceled>
+     <CanceledTimed>Timergesteuerter Job "%s" abgebrochen.</CanceledTimed>
+     <CanceledBack>Wiederherstellung Job "%s" abgebrochen.</CanceledBack>
+     <Canceling>Backup wird abgebrochen...</Canceling>
+     <EndBackup>Soll das Backup vor dem Herunterfahren beendet werden?</EndBackup>
+     <ShutdownBlock>Führt Jobs / Shutdownjobs aus.</ShutdownBlock>
+     <Closing>Backupper wird beendet...</Closing>
+     <Closed>Backupper beendet.</Closed>
+     <RealyCancel>Wollen sie den Vorgang wirklich abbrechen?</RealyCancel>
+     <tpTimeCritical>Echtzeit (nicht empfohlen)</tpTimeCritical>
+     <tpHighest>Hoch</tpHighest>
+     <tpHigher>höher als Normal</tpHigher>
+     <tpNormal>Normal (empfohlen)</tpNormal>
+     <tpLower>niedriger als Normal</tpLower>
+     <tpLowest>Niedrig</tpLowest>
+     <tpIdle>Leerlauf</tpIdle>
+     <llError>Fehler (0)</llError>
+     <llWarning>Warnungen (1)</llWarning>
+     <llInformation>Informationen (2)</llInformation>
+     <llDebug>Debug (3)</llDebug>
+     <Credits1>&amp;b&amp;uBackupper </Credits1>
+     <Credits3>Dank geht an:</Credits3>
+     <Credits4>und alle anderen die mir geholfen haben.</Credits4>
+     <CheckingUpdate>Prüfe auf Update</CheckingUpdate>
+     <NewVersionAvailable>Eine neue Version ist verfügbar</NewVersionAvailable>
+     <NewVersionAvailableLoad>Eine neue Version ist verfügbar.%sWollen sie diese jetzt downloaden?</NewVersionAvailableLoad>
+     <NoNewVersionAvailable>Es ist keine neue Version verfügbar</NoNewVersionAvailable>
+     <UpdatingEndInfo>Update erfolgreich geladen.%sDas Update wird beim schließen beendet.</UpdatingEndInfo>
+     <Version>Neueste Version: %s</Version>
+     <Unknown>Unbekannt</Unknown>
+     <Suspend>Anhalten</Suspend>
+     <Continue>Fortsetzen</Continue>
+     <ModeFile>Schnell (Dateigröße, Änderungsdatum)</ModeFile>
+     <ModeHash>Sicher (Hash)</ModeHash>
+     <ModeOneShot>Einmal</ModeOneShot>
+     <ModeEachMinute>Minuten</ModeEachMinute>
+     <ModeEachHour>Stunden</ModeEachHour>
+     <ModeEachDay>Tage</ModeEachDay>
+     <ModeEachMonth>Monate</ModeEachMonth>
+     <ModeNone>deaktiviert</ModeNone>
+     <ModeChange>ausführen bei Änderung</ModeChange>
+     <ModeChangeAndTimer>ausführen bei Timer und vorhandener Änderung</ModeChangeAndTimer>
+     <ModeChangeOrTimer>ausführen bei Timer oder bei vorhandener Änderung</ModeChangeOrTimer>
+     <UnknownSettings>Unbekannte Einstellungsdatei!%sBitte Update ausführen und Programm neu starten</UnknownSettings>
+     <Timeout>Herunterfahren in %d Sekunden</Timeout>
+     <Uninstall>Wollen sie Backupper wirklich deinstalieren?</Uninstall>
+     <UninstallSucces>Deinstallation erfolgreich.%sBitte Programmordner manuell löschen.</UninstallSucces>
+     <Restore>Wollen sie die Datein wirklich wiederherstellen?%sNeuere Quelldateien werden dabei überschrieben!</Restore>
+     <Never>Nie</Never>
+     <Init>Initialisiere</Init>
+     <Finished>Abgeschlossen</Finished>
+     <lFilesCount1>Gefunden in</lFilesCount1>
+     <lFilesCount2>Datei Nr. %d von %d</lFilesCount2>     
+     <lTimeDone1>Quelle: %d</lTimeDone1>
+     <lTimeDone2>Zeit: %s</lTimeDone2>
+     <lTimeLeft1>Ziel: %d</lTimeLeft1>
+     <lTimeLeft2>Restzeit: %s</lTimeLeft2>     
+     <lActionFileName1>Suchen %s / %s</lActionFileName1>
+     <lActionFileName2>Hashen %s / %s</lActionFileName2>
+     <lActionFileName3>Neue Datein suchen %s / %s</lActionFileName3>
+     <lActionFileName4>Gelöschte Datein suchen %s / %s</lActionFileName4>
+     <lActionFileName5>Gelöschte Ordner suchen</lActionFileName5>
+     <lActionFileName6>Verschobene Datein suchen %s / %s</lActionFileName6>
+     <lActionFileName7>Kopieren %s / %s</lActionFileName7>
+     <lActionFileName8>Verschieben %s / %s</lActionFileName8>
+     <lActionFileName9>Löschen %s</lActionFileName9>
+     <lActionFileName10>Verzeichnisse löschen</lActionFileName10>     
+     <lActionFileName11>Starte Anwendung %s</lActionFileName11>     
+     <lActionFileName12>Schließe Anwendung %s</lActionFileName12>     
+     <lSizeDoneTotal1>Gesamtgröße Quelle: %s Ziel: %s</lSizeDoneTotal1>
+     <lSizeDoneTotal2>%s von %s</lSizeDoneTotal2>
+     <lFrom1>Quelle: %s</lFrom1>
+     <lFrom3>Von: %s</lFrom3>
+     <lTo1>Ziel: %s</lTo1>
+     <lTo3>Nach: %s</lTo3> 
+     <eAppFilter>Anwendungen (*.exe;*.cmd;*.bat)|*.exe;*.cmd;*.bat</eAppFilter> 
+     <eAppTitle>Anwendung auswählen</eAppTitle>
+     <None>Keine</None>
+     <RunBevore>Vorher ausführen</RunBevore>
+     <RunAfter>Nachher ausführen</RunAfter>
+     <CloseBevore>Vorher schließen</CloseBevore>
+     <CloseAfter>Nachher schließen</CloseAfter>
+     <RunBevoreAndWait>Vorher ausführen und warten</RunBevoreAndWait>
+     <RunAfterAndWait>Nachher ausführen und warten</RunAfterAndWait>
+     <CloseBevoreAndWait>Vorher schließen und warten</CloseBevoreAndWait>
+     <CloseAfterAndWait>Nachher schließen und warten</CloseAfterAndWait>  
+     <vstPath>Pfad</vstPath>
+     <vstParam>Parameter</vstParam>
+     <vstAction>Aktion</vstAction>
+     <vstTimeout>Timeout (s)</vstTimeout>
+     <ClickToChange>Klicken um zu ändern</ClickToChange>
+     <SRMComlete>In gesamtem Pfad</SRMComlete>
+     <SRMDrivePart>Im Laufwerksanteil</SRMDrivePart>
+     <SRMFolderPart>Im Ordneranteil</SRMFolderPart>
+     <SRMDrive>Laufwerksanteil</SRMDrive>
+     <SRMFolder>Ordneranteil</SRMFolder>
+     <RealyReplace>Wollen sie "%s" durch "%s" ersetzen?</RealyReplace>
+   </GUIStrings>
+
+   <LogStrings>
+     <!--Die Zahl vor jedem Text beschreibt den Log Level des Eintrags-->
+     <!--Es wird immer der im Progamm ausgewählte Level incl. der darunter liegenden in die Log Datei geschrieben-->
+     <!--Mögliche Level:-->
+     <!--0: Fehler-->
+     <!--1: Warnung-->
+     <!--2: Information-->
+     <!--3: Debug-->
+     <!--4: Kein Level (Wird nie geschrieben)-->
+     <JobAdded>2Job "%s" hinzugefügt.</JobAdded>     
+     <JobDeleted>2Job "%s" gelöscht.</JobDeleted>
+     <JobChanged>2Job "%s" geändert.</JobChanged>
+     <JobCopied>2Job "%s" kopiert.</JobCopied>
+     <SettingsChanged>2Einstellungen geändert.</SettingsChanged>
+     <Copying>2Die Datei "%s" wird nach "%s"  kopiert</Copying>
+     <ErrorCreatingDir>0Das Verzeichnis "%s" konnte nicht erstellt werden : %s</ErrorCreatingDir>
+     <ErrorCopying>0Die Datei "%s" konnte nicht nach "%s" kopiert werden : %s</ErrorCopying>
+     <ErrorCopyingListEmpty>1Es konnte nichts kopiert werden : Liste leer</ErrorCopyingListEmpty>
+     <CopyEnd>2kopieren beendet.</CopyEnd>
+     <Moving>2Die Datei "%s" wird nach "%s" verschoben</Moving>
+     <ErrorMoving>0Die Datei "%s" konnte nicht nach "%s" verschoben werden : %s</ErrorMoving>
+     <ErrorMovingListEmpty>1Es konnte nichts verschoben werden : Liste leer</ErrorMovingListEmpty>
+     <MoveEnd>2verschieben beendet</MoveEnd>
+     <Delting>2Die Datei "%s" wird gelöscht</Delting>     
+     <ErrorDelting>0Die Datei "%s" konnte nicht gelöscht werden : %s</ErrorDelting>
+     <ErrorDeletingListEmpty>1Es konnte nichts gelöscht werden : Liste leer</ErrorDeletingListEmpty>
+     <DeleteEnd>2Dateien löschen beendet</DeleteEnd>
+     <DeltingDirsFound>3Das Verzeichnis "%s" soll gelöscht werden</DeltingDirsFound>
+     <DeltingDirs>2Das Verzeichnis "%s" wird gelöscht</DeltingDirs>
+     <ErrorDeltingDirs>0Das Verzeichnis "%s" konnte nicht gelöscht werden : %s</ErrorDeltingDirs>
+     <ErrorDeletingDirsListEmpty>1Es konnte nichts gelöscht werden : Liste leer</ErrorDeletingDirsListEmpty>
+     <DeleteDirsEnd>2Verzeichnisse löschen beendet</DeleteDirsEnd>
+     <HashingFile>2Die Datei "%s" wird gehasht</HashingFile>
+     <HashingError>0Die Datei "%s" konnte nicht gehasht werden : %s</HashingError>
+     <HashingEnd>2Dateien hashen beendet</HashingEnd>
+     <SearchFilesFound>3Datei "%s" gefunden</SearchFilesFound>
+     <SearchFilesError>0Das Verzeichnis "%s" konnte nicht durchsucht werden : %s</SearchFilesError>
+     <SearchFilesEnd>2Dateien suchen beendet</SearchFilesEnd>
+     <SearchNewFiles>2neue und geänderte Dateien suchen</SearchNewFiles>
+     <SearchNewFilesFound>3Die Datei "%s" soll nach "%s"  kopiert werden</SearchNewFilesFound>
+     <SearchChangedFilesFound>3Die Datei "%s" soll nach "%s"  aktualisiert werden</SearchChangedFilesFound>
+     <SearchNewFilesEnd>2neue und geänderte Dateien suchen beendet</SearchNewFilesEnd>
+     <SearchDeletedFiles>2gelöschte Dateien suchen</SearchDeletedFiles>
+     <SearchDeletedFilesFound>3Die Datei "%s" soll gelöscht werden</SearchDeletedFilesFound>
+     <SearchDeletedFilesEnd>2gelöschte Dateien suchen beendet</SearchDeletedFilesEnd>
+     <SearchDeletedDirs>2gelöschte Verzeichnisse suchen</SearchDeletedDirs>
+     <SearchDeletedDirsEnd>2gelöschte Verzeichnisse suchen beendet</SearchDeletedDirsEnd>
+     <SearchMovedFiles>2verschobene Dateien suchen</SearchMovedFiles>
+     <SearchMovedFilesFound>3Die Datei "%s" soll nach "%s" verschoben werden</SearchMovedFilesFound>
+     <SearchMovedFilesEnd>2verschobene Dateien suchen beendet</SearchMovedFilesEnd>
+     <SortFilesEnd>2Dateien sortieren beendet</SortFilesEnd>
+     <ErrorSetAffinity>1Fehler beim Setzen der Prozessorzuordnung für Thread "%s" : %s</ErrorSetAffinity>
+     <ShutdownCanceled>2Backupper hat das Herunterfahren aufgrund von Shutdownjobs abgebrochen!</ShutdownCanceled>     
+     <Closing>2Backupper wird beendet...</Closing>
+     <Closed>2Backupper beendet.</Closed>
+     <NewVersionAvailable>2Eine neue Version ist verfügbar</NewVersionAvailable>
+     <CheckingUpdateEnd>2Prüfung auf Updates beendet</CheckingUpdateEnd>
+     <ErrorCheckingUpdate>0Beim Prüfen auf Updates ist ein Fehler aufgetreten</ErrorCheckingUpdate>
+     <Updating>2Lade Update</Updating>
+     <UpdatingEnd>2Update erfolgreich geladen</UpdatingEnd>
+     <ErrorUpdating>0Beim Laden des Updates ist ein Fehler aufgetreten</ErrorUpdating>
+     <Started>2Backup gestartet.</Started>
+     <JobStarted>2Job "%s" gestartet</JobStarted>
+     <JobStartedTimed>2Job "%s" per Timer gestartet</JobStartedTimed>
+     <JobStartedBack>2Job "%s" zur Wiederherstellung gestartet</JobStartedBack>
+     <NoSourceFolder>0Zugriff auf Quellordner nicht möglich Job "%s" abgebrochen</NoSourceFolder>
+     <Error>0Backup mit Fehler beendet.</Error>
+     <ErrorJob>0Job "%s" mit Fehler beendet.</ErrorJob>
+     <ErrorTimed>0Timergesteuerter Job "%s" mit Fehler beendet.</ErrorTimed>
+     <ErrorBack>0Wiederherstellung Job "%s" mit Fehler beendet.</ErrorBack>
+     <Success>2Backup erfolgreich beendet.</Success>
+     <SuccessJob>2Job "%s" erfolgreich beendet.</SuccessJob>
+     <SuccessTimed>2Timergesteuerter Job "%s" erfolgreich beendet.</SuccessTimed>
+     <SuccessBack>2Wiederherstellung Job "%s" erfolgreich beendet.</SuccessBack>
+     <Canceled>1Backup abgebrochen.</Canceled>
+     <CanceledJob>1Job "%s" abgebrochen.</CanceledJob>
+     <CanceledTimed>1Timergesteuerter Job "%s" abgebrochen.</CanceledTimed>
+     <CanceledBack>1Wiederherstellung Job "%s" abgebrochen.</CanceledBack>
+     <Copy>2kopieren</Copy>
+     <Move>2verschieben</Move>
+     <Delete>2Dateien löschen</Delete>
+     <DeleteDirs>2Verzeichnisse löschen</DeleteDirs>
+     <Hashing>2Dateien hashen</Hashing>
+     <SearchFiles>2Dateien suchen</SearchFiles>
+     <SortFiles>2Dateien sortieren</SortFiles>
+     <Loaded>2Backupper gestartet.</Loaded>
+     <DestLwNameWrong>0Name des Ziellaufwerks falsch Job "%s" abgebrochen</DestLwNameWrong>
+     <SourceLwNameWrong>0Name des Quelllaufwerks falsch Job "%s" abgebrochen</SourceLwNameWrong>
+   </LogStrings>
+ </MainForm>
+
+ <AboutBox Caption="Über">
+   <OKButton Caption="OK"/>
+ </AboutBox>
+
+ <TEditChange Caption="Hinzufügen / Ändern">
+   <tsBasicOptions Caption="Optionen"/>  
+     <gbBasicOptions Caption=" Optionen "/>
+       <cbEnabled Caption="Job ausführen (Ein)"/>
+       <lName Caption="Name (erstes Wort ist Gruppenname):"/>
+       <lSource Caption="Quellordner (Netzwerk Bsp.: \\Server\Freigabe|Ordner\):"/>
+       <eSourcePath DialogText="Quellordner auswählen"/>
+       <lDestination Caption="Zielordner (Netzwerk Bsp.: \\Server\Freigabe|Ordner\):"/>
+       <eDestinationPath DialogText="Zielordner auswählen"/>
+
+   <tsAdvancedOptions Caption="Erweiterte Optionen"/>
+     <gbAdvancedOptions Caption=" Erweiterte Optionen "/>
+       <cbSubFolders Caption="Unterordner verarbeiten"/>
+       <cbDeleteFiles Caption="Nicht mehr vorhandene Dateien löschen"/>
+       <lFileMask Caption="Dateiendung/en verarbeiten (*.jpg;*.rar):"/>
+       <eFileMask Hint="Mehrere durch '';'' getrennt."/>
+       <lApplications Caption="Anwendungen:"/>
+       <lCompareMode Caption="Vergleichssystem:"/>
+       <lTimeDiff Caption="Erlaubte Zeitdifferenz zwischen den Dateien:"/>
+       <lSeconds Caption="Sekunden"/>
+
+   <tsTimerOptions Caption="Automatisierung"/>
+     <gbTimerOptions Caption=" Automatisierung "/>
+       <lTimerNumber Caption="Nummer des Job Timers"/>
+       <cbTimerEnabled Caption="Timer aktiviert"/>
+       <cbOnShutdown Caption="Beim Herunterfahren"/>
+       <lTimerMode Caption="Wiederholungen:"/>
+       <lEach Caption="Alle"/>
+       <lWatchMode Caption="Verzeichnisüberwachungsmodus:"/>
+       <lTimerDate Caption="Datum der nächsten Ausführung:"/>
+       <lTimerTime Caption="Uhrzeit der nächsten Ausführung:"/>
+
+   <tsSkip Caption="Überspringen"/>
+     <gbSkipFolders Caption=" Ordner überspringen "/>
+       <eSkipFolders DialogText="Zu überspringenden Pfad auswählen"/>
+     <gbSkipFiles Caption=" Dateien überspringen (Skip, Skip.txt, .txt, C:\Skip.txt) "/>
+       <eSkipFiles Filter="Alle Dateien (*.*)|*.*" DialogTitle="Datei auswählen"/>
+
+   <tsDrive Caption="Laufwerke"/>
+     <gbDrive Caption=" Laufwerke "/>
+       <cbSourceDriveLabel Caption="Prüfe Quelllaufwerksbezeichnung ->"/>
+       <cbDestDriveLabel Caption="Prüfe Ziellaufwerksbezeichnung ->"/>
+       <cbEnableNetworkLogon Caption="Aktiviere Anmeldung beim Netzlaufwerk"/>
+       <lUsername Caption="Benutzername:"/>
+       <lPassword Caption="Passwort:"/>
+
+   <btOk Caption="OK"/>
+   <btCancel Caption="Abbrechen"/>
+ </TEditChange>
+
+ <SettingsForm Caption="Einstellungen">
+   <btOk Caption="OK"/>
+   <btCancel Caption="Abbrechen"/>
+   <btSetValues Caption="Übernehmen"/>
+   
+   <gbLogging Caption=" Protokollierung "/>
+     <lLogPath Caption="Pfad:"/>
+     <lLogLevel Caption="Level:"/>
+     <eLogPath Hint="Doppelklicken zum auswählen."/>
+     <cbDescription Caption="Schreibe Eintragsbeschreibung"/>
+     <cbLogEnabled Caption="Ein"/>
+   
+   <gbProgramm Caption=" Programm "/>
+     <lPriority Caption="Priorität:"/>
+     <lCloseTimeout Caption="Standardtimeout:"/>
+     <lSeconds Caption="Sekunden"/>
+     <cThreadPriority/> 
+     <seWaitTimeout/>
+     <cbEndBackupbevoreShutdown Caption="Beende das Backup vor dem Herunterfahren"/>
+     <cbConfirmDelete Caption="Abfrage beim löschen eines Jobs"/>
+     <cbConfirmShutdown Caption="Frage beim Herunterfahren"/>
+     <cbAutostart Caption="Mit Windows starten"/>
+     <cbStartInTray Caption="Als Tray Icon starten"/>
+     <cbMinimizeToTray Caption="In den Tray minimieren"/>
+     <cbExtProgress Caption="Erweiterte Fortschrittsanzeige"/>	
+   
+   <gbAfterBackup Caption=" Nach manuellen dem Backup "/>
+     <cbShutdown Caption="Herunterfahren"/>
+     <cbForce Caption="erzwinge das Herunterfahren"/>
+     <cbClose Caption="Programm schließen"/>  
+ </SettingsForm>
+
+ <TShowErrors Caption="Job Fehler">
+   <btClose Caption="&amp;Schließen"/>
+ </TShowErrors>
+
+ <ShutdownRestartDialog Caption="Herunterfahren?">
+   <lWhattoDo Caption="Was wollten sie tun?"/>
+   <btShutdown Caption="Herunterfahren"/>
+   <btRestart Caption="Neustarten"/>
+ </ShutdownRestartDialog>
+ 
+ <ProgressForm Caption="Backup - Fortschritt">
+   <btBackup Caption="Start"/>
+   <btCancel Caption="Abbrechen"/>
+   <btSuspend Caption="Anhalten"/>
+ </ProgressForm>
+
+ <SRForm Caption="Suchen und Ersetzen">
+   <btOk Caption="OK"/>
+   <btCancel Caption="Abbrechen"/>
+   <lComp Caption="Suchen nach:"/>
+   <lReplace Caption="Ersetzen durch:"/>
+   <cbCaseSens Caption="Groß-/Kleinschreibung"/>
+   <cbQuitChanges Caption="Mit Bestätigung"/>
+   <lMode Caption="Ersetzen:"/>
+ </SRForm>
+</Backupper>
